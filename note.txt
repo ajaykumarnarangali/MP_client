@@ -1,0 +1,83 @@
+   Media-Player
+<---------------->
+
+pages:
+1.Landing
+2.Dashboard
+3.History
+
+components:
+1.Header
+2.Footer
+
+Landing-->Header,Footer
+Dashboard--->Header,Footer,Add-video,List-video,Category
+History----->
+
+
+     functionality
+<--------------------->
+
+1.Landing-page intro
+2.add youtube videos
+3.list added videos
+4.play added videos
+5.delete added videos
+6.add category
+7.list category
+8.add videos to category
+9.delete categories
+10.list watch history
+
+
+   steps completed
+<------------------->
+
+-->Project create
+-->clean up
+-->basic css
+-->react-bootstrap install --->npm i react-bootstrap bootstrap
+-->set bootstrap theme --->bootswatch.com[download bootstrap.min.css and import in App]
+-->create page and components
+-->routing of pages and components--->npm i react-router-dom
+    
+--------->Axios<-------
+-->handle data trasformation iteself
+
+->get ----->axios.get("url");
+->other ------>
+const req=axios({options});
+{options}===>{
+   base_url:"localhost:3000",
+   "url":"/allvideos",
+   "method":"post/put/delete",
+   "headers":{"Content-Type":"application/json" / "text/plain" / "multipart/form-data"},
+   "data":{
+      "key":"value";
+   }
+}
+
+
+--->using axios() 
+
+axios(
+{
+   base_url:"localhost:3000",
+   "url":"/allvideos",
+   "method":"post/put/delete",
+   "headers":{"Content-Type":"application/json" / "text/plain" / "multipart/form-data"},
+   "data":{
+      "key":"value";
+   }
+}
+)
+
+--->alert message.
+npm i react-tostify;
+->toast("message");
+->toast.success();
+->toast.error();
+->toast.warnig();
+
+-->state lifting
+:passing data form child to parent
